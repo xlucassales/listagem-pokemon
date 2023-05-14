@@ -1,0 +1,176 @@
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgb(211, 218, 69) 0%,
+    rgb(165, 198, 66) 5%,
+    rgb(230, 100, 25) 100%
+  );
+  color: #000000;
+}
+
+body.modo-escuro {
+  background: linear-gradient(
+    90deg,
+    rgb(55, 46, 212) 0%,
+    rgb(127, 127, 207) 5%,
+    rgb(19, 69, 79) 100%
+  );
+  color: #eef1f1;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .logo,
+header .imagem-botao {
+  width: 30px;
+  transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover,
+header .botao-lucas:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+main {
+  padding: 25px;
+}
+
+main .lista-pokemon {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  place-items: center;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+main .cartao-pokemon {
+  background-color: #d8e3ec;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 15px;
+  transition: 0.2s ease-in-out;
+}
+
+main .cartao-pokemon:hover {
+  background-color: #474e86;
+}
+
+.modo-escuro .cartao-pokemon {
+  background-color: #151212;
+}
+
+main .cartao-pokemon .informacoes {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #333333;
+  border-radius: 10px;
+}
+
+main .cartao-pokemon .informacoes span {
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+main .cartao-pokemon .gif {
+  width: 100px;
+  height: 100px;
+}
+
+main .cartao-pokemon .tipos {
+  display: flex;
+  gap: 15px;
+}
+
+main .cartao-pokemon .tipo {
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.grama {
+  background-color: #7ac74c;
+}
+
+.veneno {
+  background-color: #df67ddfb;
+}
+
+.fogo {
+  background-color: #ee8130;
+}
+
+.agua {
+  background-color: #6390f0;
+}
+
+.inseto {
+  background-color: #a6b91a;
+}
+
+.eletrico {
+  background-color: gold;
+}
+
+main .descricao {
+  max-height: 80px;
+  overflow-y: scroll;
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+header #logo-pokemon-lucas {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+header .botao-lucas {
+  width: 200px;
+  transition: 0.2s ease-in-out;
+}
+footer .imgicons {
+  width: 100px;
+  height: auto;
+}
+
+footer {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  padding: 15px 100px;
+  color: #000000;
+  margin-top: 10px;
+}
+footer span {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+}
